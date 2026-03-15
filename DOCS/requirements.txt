@@ -1,0 +1,10 @@
+deepface
+tensorflow
+tf-keras
+opencv-python
+matplotlib
+pandas
+pytest
+matplotlib.pyplot as plt
+matplotlib.image as mpimg
+shutil

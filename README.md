@@ -138,8 +138,10 @@ The **CLI** (`main.py`) only uses **`services/emotion_detector.detect_emotion()`
 
 ## Limitations and Tips
 
-- **One face per image**  
-  The current code uses `result[0]`, so only the first detected face is used. Multiple faces would require iterating over `result`.
+
+- **One face per image**
+  The current implementation only processes the first detected face (result[0]), so if an image contains multiple people with different emotions, 
+  only the dominant/first face is analysed. Supporting multi‑face detection would require iterating over all detected faces and classifying each one individually.
 
 - **Image quality**  
   Clear, front-facing faces under reasonable lighting give more stable and interpretable confidence scores.

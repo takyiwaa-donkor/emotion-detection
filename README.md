@@ -2,7 +2,60 @@
 
 This document explains how the emotion detection system in this project works, from an input image to a predicted emotion and confidence score.
 
+## Local Set up
+
+Add a requirements.txt in the repo root (same folder as main.py) so it matches what main.py tells users to install.
+The old DOCS/requirements.txt has invalid lines (matplotlib.pyplot as plt, shutil); either fix that file or remove
+duplicates so there’s one canonical list.
+
+Suggested requirements.txt (repo root)
+deepface
+tensorflow
+tf-keras
+opencv-python
+matplotlib
+numpy
+pandas
+pytest
 ---
+
+## Prerequisites
+- **Python 3.12** — TensorFlow (used by DeepFace) does not support Python 3.13+ yet. Use 3.12 for a smooth install.
+### Install
+1. Clone this repository and open a terminal in the project root (the folder that contains `main.py`).
+2. Create and activate a virtual environment:
+   **macOS / Linux**
+   ```bash
+   python3.12 -m venv venv
+   source venv/bin/activate
+   
+## Windows (Command Prompt)
+python3.12 -m venv venv
+venv\Scripts\activate
+
+3. Install dependencies:
+   pip install --upgrade pip
+   pip install -r requirements.txt
+
+## Run
+From the project root, with the virtual environment activated:
+python main.py
+You’ll get a text menu: single-image detection, batch folder, view past results, or exit. 
+For single image, the app may open a matplotlib 
+window to show the photo — use a machine with a display (or adapt the code for headless use).
+
+First run
+The first time you detect emotions, DeepFace may download model weights 
+(and related files) to a cache directory on your machine (often under ~/.deepface/). That requires a network connection once; later runs are faster.
+
+Run tests (optional)
+pytest
+
+## Troubleshooting
+ModuleNotFoundError for deepface (or similar) — Activate the venv and run pip install -r requirements.txt again from the project root.
+Python version errors when installing TensorFlow — Use Python 3.12, not 3.13+.
+
+
 
 ## Overview
 

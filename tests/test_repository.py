@@ -1,3 +1,14 @@
+"""
+Tests for the persistence layer (CSV logging + in-memory storage).
+
+Ensures that:
+- Results are written to CSV correctly.
+- In-memory results are stored and retrieved properly.
+- The data directory is created when missing.
+"""
+
+
+
 import os
 
 

@@ -1,3 +1,12 @@
+"""
+Demonstration script for emotion detection.
+
+Runs emotion detection on a predefined set of images and prints
+results to the console. Used for manual testing and showcasing
+model behavior.
+"""
+
+
 from services.emotion_detector import detect_emotion
 
 images = {

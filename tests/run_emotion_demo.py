@@ -1,3 +1,12 @@
+"""
+Runs a visual demonstration of emotion detection.
+
+Loads a sample image, performs emotion analysis, and displays the
+result using Matplotlib. Intended for quick visual verification.
+"""
+
+
+
 import cv2
 import matplotlib.pyplot as plt
 from services.emotion_detector import detect_emotion

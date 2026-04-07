@@ -1,3 +1,13 @@
+"""
+Unit tests for the emotion_detector service.
+
+Covers:
+- Single image emotion detection.
+- Handling of invalid or corrupted images.
+- Correct structure of the returned EmotionResult object.
+"""
+
+
 from services.emotion_detector import detect_emotion
 
 

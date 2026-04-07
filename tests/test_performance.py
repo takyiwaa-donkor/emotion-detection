@@ -1,3 +1,15 @@
+"""
+Performance tests for the Emotion Detection System.
+
+Measures:
+- Average processing time per image.
+- Total time for batch processing.
+- Model inference speed and stability.
+
+Used to ensure the system meets performance expectations.
+"""
+
+
 import os
 import time
 from services.emotion_detector import detect_emotion

@@ -1,3 +1,13 @@
+"""
+Tests for image preprocessing functions.
+
+Checks:
+- Resizing, normalization, and color conversion.
+- Handling of edge cases (small images, grayscale images).
+- Compatibility with the emotion model input format.
+"""
+
+
 import cv2
 import numpy as np
 

@@ -1,3 +1,13 @@
+"""
+Tests for face detection preprocessing.
+
+Validates that:
+- Faces are correctly detected before emotion analysis.
+- Images without faces raise meaningful errors.
+- Multiple faces are handled according to system design.
+"""
+
+
 from services.face_detector import detect_face
 from services.image_loader import load_image
 
